@@ -1,0 +1,82 @@
+h1 {
+	text-align: center;
+}
+
+.myform {
+	color: #5EA9DD;
+	width: 80%;
+	padding-left: 20%;
+	padding-top: 1.5em;
+} 
+.main-button-container {
+	padding-left: 34%;
+	padding-top: 2em;
+	padding-bottom: 1.5em;
+}
+
+.btn {
+	padding-left: 20% !important;
+	padding-right: 20% !important;
+}
+
+.main-button {
+	padding-left: 1em;
+}
+
+.info-container {
+	margin-left: 1em;
+}
+
+.results-container {
+	
+}
+
+.loading {
+	padding-left: 44%;
+	padding-top: 3.5em;
+}
+
+.face-result {
+	padding-left: 25%;
+	padding-top: 1.5em;
+}
+
+.sent-percent {
+	font-size: 3em;
+    font-weight: bold;
+    color: green;
+}
+
+.sent-percent-container {
+	padding-left: 80px;
+	padding-top: 1em;
+}
+
+.tweets-button {
+	padding-top: 1em;
+	padding-left: 32%;
+}
+.tweets-list {
+	padding-top: 1em;
+}
+#tw-list {
+	padding-top: 1.5em;
+	height: 256px ;
+	width:95%;
+	padding-left:1em;
+	border: 0px;
+}
+
+textarea {
+    border: none;
+    overflow: auto;
+    outline: none;
+
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none;
+}
+
+label-input {
+	color: #5EA9DD;
+}

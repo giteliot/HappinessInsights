@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Happiness Insights</title>
+	
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<meta name="viewport"
+		  content="width=device-width, height=device-height, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+	<link rel="stylesheet" href="css/style.css" />
+	<link rel="stylesheet" href="css/watson-bootstrap-dark.css" />
+	<script type="text/javascript" src="js/jquery-2.1.4.min.js"></script>
+	<script type="text/javascript" src="js/index.js"></script>	
+	<script type="text/javascript" src="js/xml2json.js"></script>
+</head>
+<body>
+	<div id="top-div" class="input-container">
+		<h1>Happiness Insights</h1>
+		<hr>
+		<div class="form-group myform">
+			<span class="label-input">
+			 Analyze sentiment for keyword (one word): 
+			</span>
+			
+	  		<input id="inputTag" type="text" class="form-control" placeholder='ex: "formentera", "ibizaisland" '>
+	  		<br>
+	  		<span class="label-input">
+			 Searching among tweets containing words (separated by commas): 
+			</span>
+	  		<input id="inputContext" type="text" class="form-control" placeholder='ex: "seaside, #holidays, vacation"'>
+		</div>
+		<div class="main-button-container">
+			<input  type="button" class="btn main-button" value="Search!" onclick="getAnalysis();">
+		</div>
+		<hr>
+	</div>
+	
+	<div class="info-container" id="#info-txt">Results will appear here</div>
+	
+	<div style="display:none;" class="loading">
+		<img src="images/twitter_flapping.gif" height="96px" width="128px">
+	</div>
+
+	<div style="display:none;" class="results-container">
+	  <div class="row">
+	  <div class="col-md-4 col-xs-12">
+		  <div class="face-result">
+			<div style="margin-left:12px;">
+				<img id="smiley"  src="images/smiley.png" height="212px" width="212px">
+			</div>
+			<img id="sad" src="images/sad.jpeg" height="256px" width="256px">
+			<div class="sent-percent-container">
+				<p class="sent-percent">No%</p>
+			</div>
+		 </div>
+	  </div>
+	  <div class="col-md-8 col-xs-12">
+	  <div class="tweets-container">
+	<!--  	 <div class="tweets-button tweets-button-show">
+				<input id="tw-button" type="button" class="btn " value="Show tweets" onclick="showTweets();">
+		 </div>
+	-->	 
+		 <div id="tweet-ref" class="tweets-list" style="display:none;">
+	<!-- 		 <hr>
+	 		 <div class="tweets-button tweets-button-hide">
+				<input type="button" class="btn " value="Hide tweets" onclick="hideTweets();">
+		 	 </div> -->
+		 	 <div id="tweets-date"></div>
+			 <textarea readonly id="tw-list">
+			  EmptyList
+			 </textarea>
+	<!-- 		 <div class="tweets-button tweets-button-hide">
+				<input type="button" class="btn " value="Hide tweets" onclick="hideTweets();">
+		 	 </div>-->
+		 </div>
+	 </div>
+	  </div>
+	</div> 
+	</div>
+
+	
+</body>
+</html>
